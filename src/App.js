@@ -15,12 +15,14 @@ import CustomerStories from "./HomePage/CustomerStories.jsx";
 import MeetExperts from "./HomePage/MeetExperts.jsx";
 import ShowApp from "./HomePage/ShowApp.jsx";
 import Footer from "./HomePage/Footer.jsx";
+import AyurvedicConsultations from "./HomePage/AyurvedicConsultations.jsx";
 
 export default function App() {
   return (
     <div className="">
       <HeroSection />
       <WalletSetup />
+      <AyurvedicConsultations/>
      <Consultant />
       <Approach />
       <CustomerStories />

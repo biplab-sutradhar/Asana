@@ -68,17 +68,17 @@ const MeetExperts = () => {
 
   return (
     <div className="bg-gray-100 pt-16 flex flex-col justify-center ">
-      <h2 className="text-2xl font-bold text-center mb-8">Meet Our Ayurveda Experts</h2>
-      <Slider ref={sliderRef} {...settings}>
+      <h2 className="text-2xl text-green-800  font-bold text-center mb-8">Meet Our Ayurveda Experts</h2>
+      <Slider ref={sliderRef} {...settings} className=' '>
         {experts.map((expert) => (
-          <div key={expert.id} className="mx-2 flex  justify-center">
+          <div key={expert.id} className=" flex mx-10  justify-center">
             <div className="bg-[#FFF7E2] shadow-md rounded-lg rounded-b-none p-6 text-center w-64">
               <img src={doctor} alt={expert.name} className="w-32 h-32 rounded-full mx-auto mb-4" />
               <h3 className="text-lg font-bold mb-2">{expert.name}</h3>
               <p className="text-gray-600">{expert.experience}</p>
              
             </div>
-            <button className="bg-green-800 w-64 text-white py-2 px-4 w-full rounded-b-full ">
+            <button className="bg-green-800 w-64 text-white py-2 px-4  rounded-b-full ">
                 Book a Session
               </button>
           </div>
@@ -93,7 +93,7 @@ const MeetExperts = () => {
           <FaArrowRight />
         </button>
         </div>
-      <button className=' w-48 p-2 bg-green-100 opacity-80 flex justify-center items-center'>Find more experts <FaArrowRight/></button>
+      <button className=' w-48 p-2 bg-green-100 opacity-80 flex justify-center my-5 items-center'>Find more experts <FaArrowRight/></button>
        
       </div>
 

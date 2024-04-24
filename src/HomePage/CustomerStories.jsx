@@ -4,6 +4,7 @@ const CustomerStories = () => {
   const stories = [
     {
       id: 1,
+      expertices: "Consulted for Skin",
       name: 'Sophia Moura',
       rating: 5,
       quote: 'One of a kind service!',
@@ -11,6 +12,7 @@ const CustomerStories = () => {
     },
     {
       id: 2,
+      expertices: "Consulted for Skin",
       name: 'Sophie Moura',
       rating: 4,
       quote: 'One of a kind service',
@@ -18,6 +20,7 @@ const CustomerStories = () => {
     },
     {
       id: 3,
+      expertices: "Consulted for Skin",
       name: 'Sophia Moura',
       rating: 5,
       quote: 'One of a kind service',
@@ -27,15 +30,20 @@ const CustomerStories = () => {
 
   return (
     <div className="bg-[#FFF7E2] py-16">
-      <h2 className="text-2xl font-bold text-center mb-8">Stories from our valued customers!</h2>
+      <h2 className="text-3xl text-green-800 font-bold text-center mb-8">Stories from our valued customers!</h2>
       <div className="flex justify-center">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl">
           {stories.map((story) => (
+            <div>
+              <div className=' w-full p-2 rounded-t-lg bg-green-100'>
+                {story.expertices}
+              </div>
+
+            
             <div key={story.id} className="bg-white rounded-lg shadow-md p-6">
               <div className="flex items-center mb-4">
-                <div className="bg-gray-400 rounded-full w-12 h-12 flex items-center justify-center mr-4">
-                  <span className="text-white font-bold">
-                    {story.name.split(' ').map((word) => word[0]).join('')}
+                <div className="bg-gray-500 rounded-full w-12 h-12 flex items-center justify-center mr-4">
+                  <span className="text-white font-bold"> 
                   </span>
                 </div>
                 <div>
@@ -58,7 +66,7 @@ const CustomerStories = () => {
               <p className="text-gray-600 mb-4">"{story.quote}"</p>
               <p className="text-gray-600">{story.description}</p>
             </div>
-          ))}
+          </div>))}
         </div>
       </div>
     </div>

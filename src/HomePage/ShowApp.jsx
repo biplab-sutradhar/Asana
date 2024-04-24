@@ -15,6 +15,15 @@ const ShowApp = () => {
           </h2>
           <button className="bg-green-700 text-white rounded px-4 py-2 mt-4">Get The App Now</button>
         </div>
+        <div className=' w-full flex flex-col md:flex-row gap-2  justify-center items-center'>
+         <div className=''>
+          <img src={google} alt="google" className=' h-14'/>
+          </div> <div>
+            <img src={apple} alt="apple" className=' h-14' />
+          </div>
+
+          
+        </div>
       </div>
       <div className='md:w-1/3 w-full'>
         <img src={showApp} alt="App.." className='w-full h-auto object-cover object-center'/>
